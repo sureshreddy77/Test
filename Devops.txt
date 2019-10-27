@@ -1,0 +1,48 @@
+https://www.softwaretestinghelp.com/devops-interview-questions/
+Jira  https://www.softwaretestinghelp.com/interview-questions/top-20-most-important-jira-interview-questions-and-answers/ 
+
+1)  Explain Devops ?
+    - DevOps promotes communication and collaboration between business, development & operations teams. In a way, we are talking about unification.
+    - DevOps is not only about tools but also about involving different teams and process.
+    - DevOps is inspired by the Agile process. It is about automating the development, release and operation processes.
+    - DevOps helps in the speed of delivering applications to the end users.
+    - DevOps is also about continuous improvement which helps in learning through feedback.
+	- DevOps implementation varies from one organization to other organization,
+	  but every organizations are looking to deliver the software faster
+	- DevOps implementation is not successful without CI and CD practices.
+	- It is very important for the Ops team to ensure that the applications are working very well at appropriate levels.
+	  If required they will need to work with the development teams to build any tools 
+	  that would help to build the right monitoring capabilities into the applications.
+
+
+In the waterfall process, as all of us are aware initially complete Requirements are gathered,
+next project design, development, testing, deployed to end user.
+In this process, the problem was that there was a huge waiting time for build and deployment which made it very difficult to get the feedback.
+
+The solution to the above problem was that the Agile process has to bring in agility in both development and operations.
+The focus area is to release the software in a very timely manner with shorter release cycles and quick feedback.
+So the agile process focus will mainly be on speed and in DevOps, it works well with the automation of various tools
+
+
+How will you approach when a project needs to implement devops?
+    - Architect should be involved to conduct this assessment.
+	- POC has to be done end to end,
+	  Once this has been accepted and approved by the end users only then the actual implementation
+ 
+ 
+2)   Can you explain the uses of the tools just mentioned and how they connect to give a DevOps model (CI/CD)?
+    - Planning    Jira – Used for Project Planning and Issue management
+    - Continuous Integration
+        Git – Version Control
+        Jenkins – Open Source Continuous Integration tool which can also help in Continuous Delivery.
+        SonarQube – Code analysis
+        JFrog Artifactory – Binary Repository Manager
+    - Continuous Delivery
+        Chef / Puppet / Ansible – Configuration Management and Application Deployment
+        IBM Urbancode Deploy / CA RA – Continuous Delivery
+    - Continuous Monitoring
+        Nagios / Splunk	
+		
+
+
+	

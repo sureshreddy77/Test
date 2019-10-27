@@ -1,0 +1,96 @@
+Explain/tell me  about yourself ?
+   -- I have been in the IT industry from last 7 years, experience in Linux system Administration, middleware administration,
+   -- I do have experience in  Linux system Administration, middleware administration and DevOps Engineernig
+   -- Worked on Server builds, Installs, Upgrades, patches and Migration,
+      Server backups and Performance Monitoring on Unix and Linux systems. 
+   -- Experience in troubleshooting web/app server related issues and providing Security installing SSL Certs,
+   -- And experienced as DevOPs Engineer working with CI/CD tools to automate the application builds and deployments
+   -- building containerized applications using docker and kubernetes in AWS cloud
+   -- Involved in architectural designs and implementation of applications
+   -- Involved in developing custom scripts using Shell (bash, ksh) and Python to automate day-to-day system administration related jobs
+
+What are your Roles & Responsibilities or Day to Day activities ?
+   -- Responsible for planning and monitoring all the application support activities in the Production environment including
+      installations, Configurations, backups, troubleshooting network related issues and app/server monitoring using Dynatrace
+   -- Involveing in the application development and deploymnets in the  lower evvironments, and Troubleshooting the issues which are found during the Application development.
+      Analizing those issues with Dev team.
+   -- Working closely with various teams like Project management, development, testing and database teams
+      to align project deliverables dates and report issues/concerns 
+
+
+How do you troubleshoot the issuees in the production environment ? 
+    - The 1st thing I do is check the server memory,load and server is up or not
+    - Check network connectivity and database connectivity
+    - looking into Server Monitoring tools to see any transaction delay
+    - logs monitoring
+  
+  
+How do you handle the situation when the production goes down ?
+    - We fallow the change management procedure
+	- Will join on the bridge call until the issue will be resloved along with other teams
+	- Then Documenting the issue and resloution 
+  
+What is the bggest compliment you got ?
+What is the issue you faced recently ?
+Did you ever feel that you could have done the work more better then what you did?
+
+why do you intrested in this position ?
+  -- I personally feel working in any big organazations like Wells Fargo deffinatley a lot of scope to learn new technologies which helps to improve my skills and career
+  -- I heard many good things about your team, the way your team handles the situations and work culture in the team & organazation
+
+Blue/Green deployment
+	In Blue Green Deployment, you have TWO complete environments.
+	One is Blue environment which is running and the Green environment to which you want to upgrade.
+	Once you swap the environment from blue to green, the traffic is directed to your new green environment.
+	You can delete or save your old blue environment for backup until the green environment is stable.	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

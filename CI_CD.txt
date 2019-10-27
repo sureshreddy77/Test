@@ -1,0 +1,82 @@
+What is Continuous Integration ?
+    -Continuous Integration (CI) is a development practice  where Merging/Integrating the code from all developers into one central branch of the shared repository
+	 frequently, preferably several times a dayto avoid the conflicts in the code and isolated changes are immediately tested and reported
+	-It also allows you to automate the build and testing process, so that the new code will automatically tested 
+	-CI automatically monitors the code commits from every developer and trigger new build
+	
+	-Example: Commit a new code to Version Control system(Git). 
+	-Jenkins trigger a new build with build tool whenever the new code Committed to Source code repository.
+	-Then the code  will be tested in testing environment and send the report back to developers.
+
+    Advantages
+	-Frequent Commits hence small feature release
+	-Automated build and Testing
+	-Instant Feedback to Developers
+	-Low risk and faster delivery
+         
+		 
+What is Continuous Delivery ?
+    -It build and automates the software release process in a way that the software can be deployed to production at any time.
+	-Here deployment to Production environment is Manual(you need approval)
+	-A continuous delivery (CD) pipeline is an automated expression of your process for getting software from version control
+	 right through to your users and customers
+	
+What is Continuous Deployment ?
+    - Every change or commit which goes into the source code repository, that will automatically deployed into the production environment without any approval(without human interaction).
+
+	
+1) Planning Phase            - Jira       -Architect
+                               Under Settings--> Addons we can integrate Git,So for every commit we will get new task
+2) Source Code Management    - Git        -Programmer          
+3) Code Review               - Sonarquebe -Code Analyst  
+                               We need 3  things
+                               Source Server  ----->  we can write rules on SonaQube server  (Under Global tool Configuration)
+							   Source Code	----> install Pluig and provide URL, User Name, Passowrd and authentication Token
+							   scanner(broker)---> in properties file we need to mention SonarQube Server details      
+4) Build Management          - Maven      -Build Engineer
+                               Maven validate
+                               Maven Compile ----> create a job   (Build --> under maven goals ---> compile)
+							   Maven Testing  ----> create a job  (Build --> under maven goals ---> test)
+							   Maven Package ---->    create a job (Build --> under maven goals ---> package)
+							   Maven Deploy to repository
+							   
+5) Unit Testing              - Junit      -Programmer
+                               POM.xml modification in Maven
+							   we can use frameworks
+6) Packaging                 - War, Jar   -Infrastructure
+                               POM.xml 
+							   
+7) Artifact Repo Management  - Nexus/JFrog      -Infrastructure
+                             - need 2 modifications to upload the package
+                             - POM.xml Modification in Maven --------->  <distrubuted management>
+							 - we have to tell where is our Artifactory repository URL and Repository name
+							 - settings.xml modification in Maven conf ------> <server>
+                             - Then goto Maven home type Maven Deploy  
+							   
+8) Deploy to Qa Environment  - Docker     -OPS Team
+9) Testing                   - Selinium   -Testing Team
+10)Code Coverage             - Jacoco     -Testing Team
+11)Release                   
+*******************************************************************************************************************************
+
+1)  Install Web Server 
+    - yum install httpd
+    - rpm -qf /etc/httpd
+	- sudo systemctl start httpd
+	- sudo systemctl status httpd
+	- sudo systemctl enable httpd
+	
+2)  Install JaVA
+	- java -version
+    - yum install java
+    - java -version
+   
+3)  Install Jenkins   
+	- yum install jenkins
+    - curl --silent --location http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo | sudo tee /etc/yum.repos.d/jenkins.repo
+    - udo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+    - yum install jenkins
+    - sudo systemctl start jenkins  or  sudo service jenkins start
+    - sudo systemctl status  jenkins
+    - sudo systemctl enable jenkins
+    - /etc/sysconfig/jenkins -----> To change the default Port Numbert

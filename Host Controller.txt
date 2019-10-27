@@ -1,0 +1,35 @@
+domain controller
+
+ ./domain.sh --host-config=host-master.xml -Djboss.domain.base.dir=/home/vagrant/daily/EAP-6.0.0.GA-silent/machine1/domain/ -Djboss.bind.address.management=192.168.33.15
+
+jboss.bind.address.management
+jboss.domain.master.address
+jboss.bind.address
+
+./domain.sh --host-config=host-slave.xml -Djboss.domain.base.dir=/home/vagrant/daily/EAP-6.0.0.GA-silent/machine2/domain/ -Djboss.domain.master.address=192.168.33.15 -Djboss.bind.address=192.168.33.15
+
+./domain.sh --host-config=host-slave.xml -Djboss.domain.base.dir=/home/vagrant/daily/EAP-6.0.0.GA-silent/machine3/domain/ -Djboss.domain.master.address=192.168.33.15 -Djboss.bind.address=192.168.33.15
+
+
+Jboss Cli
+./jboss-cli.sh --connect --controller=10.108.206.172
+https://docs.jboss.org/author/display/WFLY/Command+Line+Interface
+
+
+***********************************************************************************************************
+
+domain controller Windows
+
+domain.bat --host-config=host-master.xml -Djboss.domain.base.dir=C:\Users\fo1675\devstudio\runtimes\machine1\domain\ -Djboss.bind.address.management=10.108.206.172
+
+jboss.bind.address.management
+jboss.domain.master.address
+jboss.bind.address
+
+domain.bat --host-config=host-slave.xml -Djboss.domain.base.dir=C:\Users\fo1675\devstudio\runtimes\machine2\domain\ -Djboss.domain.master.address=10.108.206.172 -Djboss.bind.address=10.108.206.172
+
+domain.bat --host-config=host-slave.xml -Djboss.domain.base.dir=C:\Users\fo1675\devstudio\runtimes\machine3\domain\ -Djboss.domain.master.address=10.108.206.172 -Djboss.bind.address=10.108.206.172
+
+
+standalone.bat -c=standalone-full.xml -b=ip
+http://www.mastertheboss.com/jboss-server/jboss-configuration/jboss-start-up-configuration

@@ -1,0 +1,130 @@
+server-identities definition <secret value="cGFzc3dvcmQ=" />
+
+PCF team
+1  Engineering Team
+2) Operational Team
+
+
+Q) Working with Offshore team experience  
+Q) Mentoring Experience 
+Q) Concores
+Q) kubernates
+Q) How you deploy Kubernates on ESXi
+Q) Cloud Experience AWS, Openstack
+Q) Difference B/W openstack and Vmware
+Q) Scripting Experience.
+
+http://172.16.100.200/display/DEV/Interviews
+
+
+Employer details:
+
+Lisa Stevens
+JNIT Technologies Inc
+Tel: 214-817-2620|Fax: 732-579-5515
+Email: Lisa@jnitinc.com
+1900 Enchanted Way,Suite 200, Grapevine, TX 76051 
+
+
+Name:Sam Miller I Sr. Business Development Executive
+Employer Name: JNIT Technologies Inc. 
+E-mail: sam@jnitinc.com 
+Phone: 214-817-2616 
+1900 Enchanted Way, Suite 200, Grapevine, TX 76051
+
+
+Mike Ross, BDM
+JNIT Technologies Inc.
+Tel: 214-817-2625 
+Mobile: 732-568-4806 / Fax: 732-579-5515
+Email: Mike@jnitinc.com 
+1900 Enchanted Way, Suite 200, Grapevine, TX 76051
+
+
+Shane Mathew
+Business Development Manager
+JNIT Technologies Inc
+Tel: 214-919-4829 / Fax: 732-579-5515
+Email: shane@jnitinc.com
+1900 Enchanted Way, Suite 200, Grapevine, TX 76051
+
+
+
+Name -  Suresh Reddy Peddolla	
+Email - sreddy5482@gmail.com
+Contact - 4846331683
+DOB    - 03/20/1990
+Skype   -suresh.reddy797
+SSN  -  0507
+Visa Status - H1b
+Education - Bachelors in Computer Science, 
+             JNTU, HYD, 2010
+Current Location - Dallas, TX
+Relocation  - Yes
+Availability for Interview: Let me know a day before.
+Availability - 2 Weeks
+LinkedIIn ID: https://www.linkedin.com/in/suresh-reddy-peddolla-a76a95150/
+
+References
+
+Client:NYSITS
+Sreedhar G
+sreedhar.gunda@its.ny.gov   
+Manager
+PH: 510-579-5801
+ n
+Client:Cadence
+Gita k
+gitak@cadence.com
+Architect 
+PH: 408-944-7321
+
+
+Durability
+Redundnecy
+
+
+ASRC Federal, 11091 sunset hill road, Reston, VA 20190
+*
+
+
+Daily responsibilities Micro services
+F5 load balancing
+How do you find out all the listining port numbers 
+performance issue - how do you trouble shoot
+Memory leak -- what could be the reason
+Jenkins - how will you deply latest build 
+Zira- 
+What is your strongest exp, DevOps or Linux ?
+Offshore team in Banglore.
+change calls every day.
+What is DevOps 
+
+
+
+
+SOP-Statement of procedure.
+908-363-0985 Slumber J
+
+
+
+Collabera ---- $58
+Randstad ---  $63
+ART      ---- Quota done
+S3       ---- Quota done
+Apex     ---- Won't Work
+Insight Global --- Can't work
+INT Technologies  --- Sent an email
+Signature Consultants -- Senat an email
+
+
+
+
+
+Client: Wells Fargo
+Address: 800 Walnut St, Des Moines, IA 50309
+Title: Application Systems Engineer
+
+
+
+

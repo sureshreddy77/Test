@@ -1,0 +1,131 @@
+	/etc/sysconfig/jenkins , Default port is 8080
+What is Jenkins ?
+    -It is an automation server, Open source software, written in Java and Pltform Independent
+    -Used for (CI/CD) Continuous Integration and  Continuous Delivery/Deployment
+    -Jenkins helps to automate the software development process and Deployment process
+    -Jenkins is just an orchestrator, which makes the life of the developer easier to keep the tack of successful build 
+    and integrate changes continuously and rectify the defects on time
+    
+Advantages of using Jenkins are:
+    -Do not need to check the code and start to build manually.
+	-Whenever there are changes in source code, an automatic build will get started.
+	-If there are any build failures, automatic email sends to concerned team.
+	-Bugs or defects can be easily tracked and resolved at early stages.
+	-Helps in achieving the continuous integration agile development and test-driven development.
+	-It makes the process faster and smoother.	
+	
+What is Jenkins pipeline ?
+    -It is a combination of plugins that support integration and implementation of Continuous delivery pipelines using Jenkins.
+    -in Jenkins, Pipeline is a group of Jobs which are interlinked with one another in a sequence.
+	-Jenkins pipeline has the ability to support the automation of software devepolment process.
+	-Jenkins basicaly do Build ------->Test---------->Deploy
+	
+Define the process of Jenkins?
+    -In Source code management repository, developers need to commit their code on daily basis 
+    -GIT and SVN are widely used nowadays.
+    -After committing the changes, Jenkins will detect the changes from the code repository and triggers new build automatocally
+     because Jenkins check the repository changes at regular intervals.
+    -It will continue through different stages which are mentioned in the Jenkins pipeline.
+    -If one job will get successfully completed then it will go to another task or job.
+    -If particular job fails, Jenkins build stops there and it will not proceed further.
+    -Jenkins has a feature to send the email notification to a concerned team or to particular email id, which has been configured for Jenkins.
+    -If all the jobs are successfully completed then it will deploys the code in particular mentioned server(usually testing environment)
+    -If the testing gets passed successfully, it will deploy into another environments. 
+    -The whole process keeps on iterating whenever code will be committed in SCM.
+	
+Mention the steps to set up Jenkins Job?
+	-Go to Jenkins page, select ‘new job’
+	-Enter the name of the job and choose ‘build free-style project’.
+	-Click ok and start configuring your job.
+	-Put the details of SVN or GIT repository, where the source code has been placed.
+	-Provide all other information regarding plugins that required using in a project like for unit testing, code coverage, code quality.
+	-Mention the build tool script like Maven script.
+	-Collect the information regarding results
+	-Configure the steps to send the notifications via emails, etc.
+
+How to schedule a build in Jenkins ?
+    -Under job configuration we can define various build triggers. find the "Build Triggers" and check the "Build Periodically" checkbox
+    -Minutes(0-59), Hours(0-23), Day(1-31),Month(1-12), Day of the week(0-7)
+
+What is Jenkinsfile ?
+    -It is a text file that contains the defination of a Jenkins Pipeline and it is checked into source control. 
+	(or)
+	-The Jenkins pipeline details are stored in a file that is named as the Jenkins file 
+	 and it is further connected to the source code repository in general.
+	-It should always be implemented into the source control.
+	-It is written in Groovy.
+	-Jenkinfile consist of 3 stages. Build, Test and deploy
+    
+****- Jenkins file can be defined by either web UI or using Jeninks file that you can place in repository 
+      it is generally considered best practice to define the Pipeline in a Jenkinsfile and check that in to source control
+    - There are two types of syntax used for defining Jenkins file
+	  1) Scripted Syntax
+	  2) Declarative Syntax
+      https://jenkins.io/doc/book/pipeline/
+
+
+*****Nodes
+     - Jenkins Home ----> Manage Jenkins ----> Manage Nodes  ---> new node ---> No executors(No jobs parallel jobs at the same time)
+     - In Jenkins Job, in general restrict where this project can be run
+
+
+How to create a backup and copy files in Jenkins ?
+    -All you need to do is to periodically  backup your JENKINS_HOME directory.
+  
+
+    1 yum install httpd
+    2 rpm -qf /etc/httpd
+	  sudo systemctl start httpd
+	  sudo systemctl status httpd
+	  sudo systemctl enable httpd
+	  
+    3  java -version
+    4  yum install java
+    5  java -version
+    6  yum install jenkins
+    7  curl --silent --location http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo | sudo tee /etc/yum.repos.d/jenkins.repo
+    8  sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+    9  yum install jenkins
+   10  sudo systemctl start jenkins  or  sudo service jenkins start
+   11  sudo systemctl status  jenkins
+   12  sudo systemctl enable jenkins
+    /etc/sysconfig/jenkins in CentOS/RHEL or 
+	/etc/default/jenkins in Debian based distributions and change the JENKINS_PORT=  
+    	
+docker run -p 8090:8080  -v /root/jenkins-data:/var/jenkins_home -u root  jenkins
+docker run -it -p 8090:8080 jenkins /bin/bash interactive mode
+
+
+to see default password cat /var/lib/jenkins/secrets/initialAdminPassword
+to check which port in running on jenkins   sudo /usr/sbin/lsof -i -P | grep -i jenkins
+to change the default port number vi /etc/sysconfig/jenkins then restart
+
+Jenkins_HOME =/var/lib/jenkins
+default clone location is Workspace under Jenkins home
+
+
+	
+	
+https://www.educba.com/jenkins-interview-questions/
+https://www.janbasktraining.com/blog/jenkins-interview-questions/#1
+	
+How to Setup Jenknins on Tomcat(servelet Container)
+    -Install Tomcat on your machine
+	-Copy /place the jenkins.war  file inside webapps folder
+	-Goto tomcat bin folder
+	-Startup./shutdown.sh
+	
+ java -> /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.201.b09-0.amzn2.x86_64/jre/bin/java
+ /etc/alternatives
+ http://34.205.121.252:8080
+ /opt/ucd/server/bin/init
+ 
+
+
+
+
+
+
+
+
+ 	
